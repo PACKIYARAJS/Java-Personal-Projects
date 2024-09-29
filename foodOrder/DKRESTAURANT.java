@@ -58,7 +58,7 @@ boolean fooditems = false;
 		
 	if(fooditems==false) {
 		
-		System.out.println("no");
+		System.out.println("ENTER GIVEN ABOVE FOOD ITEMS");
 		
 	   }	
 	

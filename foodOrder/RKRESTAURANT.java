@@ -56,7 +56,7 @@ public class RKRESTAURANT extends Invoice{
 		
 	    if(fooditems==false) {
 		
-		   System.out.println("no");
+		   System.out.println("ENTER GIVEN ABOVE FOOD ITEMS");
 		
 	   }	
 	

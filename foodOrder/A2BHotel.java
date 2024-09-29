@@ -58,7 +58,7 @@ public class A2BHotel extends Invoice{
 		
 	    if(fooditems==false) {
 		
-		   System.out.println("no");
+		   System.out.println("ENTER GIVEN ABOVE FOOD ITEMS");
 		   
 	   }	
 	

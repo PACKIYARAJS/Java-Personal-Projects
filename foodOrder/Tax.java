@@ -14,6 +14,7 @@ public class Tax {
 		
 		System.out.println("YOUR ACUTAL AMONUNT Rs. "+acutalamount);
 		
+		
 	}
 
 }

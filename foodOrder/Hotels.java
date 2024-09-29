@@ -1,5 +1,11 @@
 package foodOrder;
 
+import java.time.LocalDate;
+
+import java.time.LocalTime;
+
+
+
 import java.util.Scanner;
 
 public class Hotels extends A2BHotel{
@@ -10,13 +16,23 @@ public class Hotels extends A2BHotel{
 		
 		String hotelsname = null;
 		
-		String[] hotelnames = {"A2B","SARAVANA BHAVAN","RK RESTAURANT","DK RESTAURANT"};	
+		String[] hotelnames = {"A2B","SARAVANA BHAVAN","RK RESTAURANT","DK RESTAURANT"};
+		
+        LocalDate date = LocalDate.now();
+        
+        LocalTime time= LocalTime.now();
+        
+        System.out.println("DATE :"+date);
+        
+        System.out.println("TIME :" + time);
 		
 		for (String name:hotelnames) {
 			
-			System.out.println(name);
+			System.out.print(name +", ");
 			
 		}
+		
+		System.out.println();
 		
 		System.out.println("ENTER THE HOTEL NAMES GIVEN ABOVE : ");
 	
