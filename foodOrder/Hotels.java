@@ -4,8 +4,6 @@ import java.time.LocalDate;
 
 import java.time.LocalTime;
 
-
-
 import java.util.Scanner;
 
 public class Hotels extends A2BHotel{
@@ -71,7 +69,7 @@ public class Hotels extends A2BHotel{
 	    if(hotels && hotelsname.equalsIgnoreCase("A2B")) {
 	    	
 	    	FoodItems();
-	    	
+	   
 	    }
 	    
 	    if(hotels && hotelsname.equalsIgnoreCase("SARAVANA BHAVAN")) {

@@ -13,8 +13,7 @@ public class Tax {
 		System.out.println("TAX AMOUNT IS Rs. "+taxvalue);
 		
 		System.out.println("YOUR ACUTAL AMONUNT Rs. "+acutalamount);
-		
-		
+			
 	}
 
 }

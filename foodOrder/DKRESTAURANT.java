@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class DKRESTAURANT extends Invoice{
 	
-boolean fooditems = false;
+	boolean fooditems = false;
 	
 	int quantity = 0;
 	
