@@ -32,7 +32,7 @@ public class DKRESTAURANT extends Invoice{
 		
 		System.out.println("ENTER THE FOOD ITEMS GIVEN ABOVE :");
 		
-		for(int i=0; i<3;i++) {
+		for(int i=0; i<4;i++) {
 			
 			Scanner value = new Scanner(System.in);
 			
