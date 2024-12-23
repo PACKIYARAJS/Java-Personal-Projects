@@ -46,7 +46,7 @@ public class DKRESTAURANT extends Invoice {
 			
 			fooditems = true;
 			
-			int quantity = Integer.valueOf(aftersplit[1]);
+			int quantity = Integer.parseInt(aftersplit[1]);
 			
 			Calculation(quantity);
 			
