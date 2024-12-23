@@ -10,6 +10,8 @@ public class RKRESTAURANT extends Invoice{
 	
 	int quantity = 0;
 	
+	Scanner value = new Scanner(System.in);
+	
 	public void FoodItems(){
 		
 		HashSet<String> Items = new HashSet<>();
@@ -32,8 +34,6 @@ public class RKRESTAURANT extends Invoice{
 		
 		for(int i=0; i<3;i++) {
 			
-			Scanner value = new Scanner(System.in);
-			
 			String iname = value.nextLine();
 			
 		for (String name:Items) {
@@ -48,20 +48,24 @@ public class RKRESTAURANT extends Invoice{
 			
 			Calculation(quantity);
 			
-			break;
-			
 		   }
 			
 	   }
 		
-	    if(fooditems==false) {
+	    if(!fooditems) {
 		
 		   System.out.println("ENTER GIVEN ABOVE FOOD ITEMS");
+		   
+		   continue;
 		
 	   }	
+	    
+	    break;
 	
     }
+		
+		value.close();
 
-  }
+  }	
 	
 }

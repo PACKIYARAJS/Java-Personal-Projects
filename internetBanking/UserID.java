@@ -12,6 +12,8 @@ public class UserID extends RAJID{
 	
 	String names = null;
 	
+	Scanner name = new Scanner(System.in);
+	
 	public void userid() {
 	
 		LocalDate date = LocalDate.now();
@@ -31,8 +33,6 @@ public class UserID extends RAJID{
 		System.out.println("ENTER YOUR USERID :");
 		
 		for(int i=0; i<3; i++) {
-			
-			Scanner name = new Scanner(System.in);
 			
 			String value = name.nextLine();
 			
@@ -65,11 +65,15 @@ public class UserID extends RAJID{
 			
 			BorW();
 			
+			break;
+			
 		}
 		
 		if(User && names.equals("agash666@ikbank")) {
 			
 			new AgashID().BorW();
+			
+			break;
 			
 		}
 		
@@ -77,15 +81,21 @@ public class UserID extends RAJID{
 			
 			new SathishID().BorW();
 			
+			break;
+			
 		}
 		
 		if(User && names.equals("ravi123@ikbank")) {
 			
 			new RaviID().BorW();
 			
+			break;
+			
 		}
 			
 		}
+		
+		name.close();
 		
 	}
 	

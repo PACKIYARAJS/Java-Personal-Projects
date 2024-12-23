@@ -63,35 +63,51 @@ public class RaviID {
 	public void Withdraw() {
 		
 		for(int i=0; i<3; i++) {
-		
-		int otp = (int) (Math.random()*900000)+100000;
-		
-		System.out.println("Enter the OTP :"+otp);
-		
-		int otpn = u.nextInt();
-		
-		if(otpn==otp) {
-		
-		System.out.println("Enter the amount :");
-		
-		int value =u.nextInt();
-		
-		int a = amount - value;
-		
-		System.out.println("Successfully withdraw amount Rs."+value);
-		
-		System.out.println("Your balance amount is Rs."+a);
-		
-		break;
-		
-		}
-		
-		else {
 			
-			System.out.println("Incorrect OTP");
+			int otp = (int) (Math.random()*900000)+100000;
 			
-		}
+			System.out.println("Enter the OTP :"+otp);
+			
+			int otpn = u.nextInt();
+			
+			if(otpn==otp) {
+			
+				System.out.println("Enter the amount :");
+			
+				int value =u.nextInt();
 		
+			if(value<amount) {
+			
+				int ba = amount - value;
+			
+				System.out.println("Successfully withdraw amount Rs."+value);
+			
+				System.out.println("If you want to check your balance \n Yes or No");
+				
+				u.nextLine();
+				
+				String select = u.nextLine(); 
+				
+			if(select.equalsIgnoreCase("yes")) {
+			
+				System.out.println("Your balance amount is Rs."+ba);
+				
+			}
+				
+				break;
+			
+			}
+			
+			else System.out.println("Invalid amount");
+			
+			}
+			
+			else {
+				
+				System.out.println("Incorrect OTP");
+				
+			}
+			
 		}
 		
 	}

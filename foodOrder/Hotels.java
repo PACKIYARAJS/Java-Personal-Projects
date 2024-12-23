@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 public class Hotels extends A2BHotel{
 	
+	Scanner value = new Scanner(System.in);
+	
 	public void Hotelname() {
 		
 		boolean hotels= false;
@@ -34,9 +36,7 @@ public class Hotels extends A2BHotel{
 		
 		System.out.println("ENTER THE HOTEL NAMES GIVEN ABOVE : ");
 	
-	    for(int i=0; i < 3; i++) {
-	    	
-	    	Scanner value = new Scanner(System.in);
+	    for(int i=0; i < 3; i++) { 	
 	    	
 	        String hname = value.nextLine();
 	        
@@ -69,6 +69,8 @@ public class Hotels extends A2BHotel{
 	    if(hotels && hotelsname.equalsIgnoreCase("A2B")) {
 	    	
 	    	FoodItems();
+	    	
+	    	break;
 	   
 	    }
 	    
@@ -76,11 +78,15 @@ public class Hotels extends A2BHotel{
 	    	
 	    	new SARAVANABHAVAN().FoodItems();
 	    	
+	    	break;
+	    	
 	    }
 	    
 	    if(hotels && hotelsname.equalsIgnoreCase("RK RESTAURANT")) {
 	    	
 	    	new RKRESTAURANT().FoodItems();
+	    	
+	    	break;
 	    	
 	    }
 	    
@@ -88,9 +94,13 @@ public class Hotels extends A2BHotel{
 	    	
 	    	new DKRESTAURANT().FoodItems();
 	    	
+	    	break;
+	    	
+	    }
+	      
 	    }
 	    
-	    }
+	    value.close();
 	    
 	}
 	

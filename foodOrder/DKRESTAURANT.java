@@ -4,11 +4,13 @@ import java.util.TreeSet;
 
 import java.util.Scanner;
 
-public class DKRESTAURANT extends Invoice{
+public class DKRESTAURANT extends Invoice {
 	
 	boolean fooditems = false;
 	
 	int quantity = 0;
+	
+	Scanner value = new Scanner(System.in);
 	
 	public void FoodItems(){
 		
@@ -32,10 +34,8 @@ public class DKRESTAURANT extends Invoice{
 		
 		System.out.println("ENTER THE FOOD ITEMS GIVEN ABOVE :");
 		
-		for(int i=0; i<4;i++) {
-			
-			Scanner value = new Scanner(System.in);
-			
+		for(int i=0; i<3;i++) {
+				
 			String iname = value.nextLine();
 			
 		for (String name:Items) {
@@ -46,23 +46,28 @@ public class DKRESTAURANT extends Invoice{
 			
 			fooditems = true;
 			
-			int quantity = Integer.parseInt(aftersplit[1]);
+			int quantity = Integer.valueOf(aftersplit[1]);
 			
 			Calculation(quantity);
-			
-			break;
 			
 		   }
 			
 	   }
+	
 		
-	if(fooditems==false) {
+	if(!fooditems) {
 		
 		System.out.println("ENTER GIVEN ABOVE FOOD ITEMS");
 		
-	   }	
+		continue;
+		
+	   }
+	
+	break;
 	
     }
+		
+		value.close();
 		
   }
 

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RAJID {
 	
 	private int Passcode= 123456;
-	
+
 	private int amount = 100000;
 	
 	Scanner u = new Scanner(System.in);
@@ -20,9 +20,9 @@ public class RAJID {
 		
 		if(code == Passcode) {
 		
-		System.out.println("1.Check Balance \n2.Withdraw");
+			System.out.println("1.Check Balance \n2.Withdraw");
 		
-	    int number = u.nextInt();
+			int number = u.nextInt();
 	    
 	    if(number==1) {
 	    	
@@ -72,17 +72,33 @@ public class RAJID {
 		
 		if(otpn==otp) {
 		
-		System.out.println("Enter the amount :");
+			System.out.println("Enter the amount :");
 		
-		int value =u.nextInt();
+			int value =u.nextInt();
+	
+		if(value<amount) {
 		
-		int a = amount - value;
+			int ba = amount - value;
 		
-		System.out.println("Successfully withdraw amount Rs."+value);
+			System.out.println("Successfully withdraw amount Rs."+value);
 		
-		System.out.println("Your balance amount is Rs."+a);
+			System.out.println("If you want to check your balance \n Yes or No");
+			
+			u.nextLine();
+			
+			String select = u.nextLine(); 
+			
+		if(select.equalsIgnoreCase("yes")) {
 		
-		break;
+			System.out.println("Your balance amount is Rs."+ba);
+			
+		}
+			
+			break;
+		
+		}
+		
+		else System.out.println("Invalid amount");
 		
 		}
 		
@@ -92,9 +108,9 @@ public class RAJID {
 			
 		}
 		
-		}
-		
 	}
+		
+}
 	
 	public static void main(String[] args) {
 		

@@ -10,6 +10,8 @@ public class A2BHotel extends Invoice{
 	
 	int quantity = 0;
 	
+	Scanner value = new Scanner(System.in);
+	
 	public void FoodItems(){
 		
 		ArrayList<String> Items = new ArrayList<>();
@@ -32,9 +34,7 @@ public class A2BHotel extends Invoice{
 		
 		System.out.println("ENTER THE FOOD ITEMS GIVEN ABOVE :");
 		
-		for(int i=0; i<3;i++) {
-			
-			Scanner value = new Scanner(System.in);
+		for(int i=0; i<3;i++) {	
 			
 			String iname = value.nextLine();
 			
@@ -50,19 +50,23 @@ public class A2BHotel extends Invoice{
 			
 			Calculation(quantity);
 			
-			break;
-			
 		   }
 			
 	   }
 		
-	    if(fooditems==false) {
+	    if(!fooditems) {
 		
 		   System.out.println("ENTER GIVEN ABOVE FOOD ITEMS");
 		   
-	   }	
-	
+		   continue;
+		   
+	   }
+	    
+	    break;
+	    
     }
+	
+		  value.close();
 		
 }
 	

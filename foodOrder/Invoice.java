@@ -18,6 +18,8 @@ public class Invoice extends Tax{
 		
 		taxcal(Price);
 		
+		q.close();
+		
 	}
 
 }
